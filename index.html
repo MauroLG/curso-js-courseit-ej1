@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CourseIt Javascript</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="container">
+        <div class="image">
+          <img
+            src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="bar"></div>
+        <div class="profile-data">
+          <h1 class="name">Hilario Rodrigues</h1>
+          <p class="user">@heavyzebra848</p>
+        </div>
+      </section>
+      <div id="button"><span class="text-button">MEET HILARIO</span></div>
+    </main>
+  </body>
+  <script>
+    const elementId = document.getElementById('button');
+    const elementClass = document.getElementsByClassName('profile-data');
+    const elementTag = document.getElementsByTagName('div');
+
+    console.log(
+      `En este HTML hay: un elemento con el id button con contenido: ${elementId.innerHTML}, ${elementClass.length} con clase "profile-data" y ${elementTag.length} elementos con tag "div".`
+    );
+  </script>
+</html>
